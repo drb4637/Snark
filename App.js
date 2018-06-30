@@ -11,3 +11,5 @@ serv.listen(port, ()=> {
 }); 
 
 app.use(exp.static(path.join(__dirname, 'www')));
+app.use(exp.static(path.join(__dirname, 'node_modules/phaser/dist')));
+app.use(exp.static(path.join(__dirname, 'www')));
